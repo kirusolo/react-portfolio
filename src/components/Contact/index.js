@@ -7,8 +7,15 @@ import AnimatedLetters from '../AnimatedLetters'
 import 'leaflet/dist/leaflet.css'
 import './index.scss'
 import L from 'leaflet'
+import blueIcon from 'leaflet/dist/images/marker-icon-2x.png'
 
-const defaultIcon = new L.Icon.Default()
+const blueMarkerIcon = new L.Icon({
+  iconUrl: blueIcon,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+})
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -105,8 +112,11 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
           <MapContainer center={[45.48022, 12.224064]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[45.48022, 12.224064]} icon={defaultIcon}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[45.48022, 12.224064]} icon={blueMarkerIcon}>
               <Popup>
                 kirubel lives here, come over for a cup of coffee :)
               </Popup>

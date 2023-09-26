@@ -1,0 +1,47 @@
+[33mcommit 0a53459cd1c4a205b735697c728948e0a8d345f2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Tue Sep 26 00:15:29 2023 +0200
+
+    working my contact page using emailjs and also add my realtime location using react leafler
+
+[33mcommit 34049b6a2a339739a62d2ec0804305d851d9d014[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Mon Sep 25 12:23:55 2023 +0200
+
+    done with about page and i put a loader when i go to every page
+
+[33mcommit 366d8a4813a5a4edfde6fca210133e6f78e6144b[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Sat Sep 23 16:18:11 2023 +0200
+
+    i put my secure scripting nickname with the logo s
+
+[33mcommit 2c7c7d0b42f6af806eb7dd9cab6cabed4512cb1c[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Sat Sep 23 10:49:39 2023 +0200
+
+    style using animated letters
+
+[33mcommit 57c1edfe348934a8f80678e9a712a16450aee28c[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Thu Sep 21 13:19:16 2023 +0200
+
+    makeing my home page and add some social media icons
+
+[33mcommit 43cb1ec99c8db8134b4979c21f3ed500b345e196[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Wed Sep 20 13:27:14 2023 +0200
+
+    i put the logo and sublogo of my name in the left side navbar
+
+[33mcommit fc3e8576f32ad6084a8ae5cfa28cb6687f433558[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Wed Sep 20 11:40:51 2023 +0200
+
+    first commit
+
+[33mcommit ec51333f37d5c872082a9b8927ecd4ad577b4301[m
+Author: kirusolo <kirubelendala15@gmail.com>
+Date:   Tue Sep 19 17:01:48 2023 +0200
+
+    Initialize project using Create React App
