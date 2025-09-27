@@ -3,7 +3,6 @@ import './index.scss';
 
 const AnimatedStars = () => {
   const canvasRef = useRef(null);
-  const animationRef = useRef(null);
   const starsRef = useRef([]);
 
   useEffect(() => {
