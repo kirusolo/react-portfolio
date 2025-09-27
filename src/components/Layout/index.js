@@ -1,10 +1,17 @@
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar'
+import AnimatedStars from '../AnimatedStars'
 import './index.scss'
 
 const Layout = () => {
   return (
     <div className="App">
+      {/* Animated stars background for all pages */}
+      <AnimatedStars />
+      
+      {/* Optional: Add a shooting star occasionally */}
+      <div className="shooting-star"></div>
+      
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>

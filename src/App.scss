@@ -3,9 +3,26 @@ $primary-color: #ffd700;
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
+/* 🌍 Global layout fixes for scrolling + mobile optimization */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // prevent sideways scroll
+  overflow-y: auto;   // allow vertical scrolling
+  -webkit-overflow-scrolling: touch; // smooth scrolling on iOS
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  src: url('./assets/fonts/helvetica-neu.ttf') format('truetype');
 }
 
 @font-face {

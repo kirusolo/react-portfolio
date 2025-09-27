@@ -1,0 +1,70 @@
+// Animated Stars Background Styles
+.animated-stars-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background: transparent;
+}
+
+// Shooting star animation (occasional)
+.shooting-star {
+  position: fixed;
+  top: 20%;
+  left: -100px;
+  width: 2px;
+  height: 2px;
+  background: #FFD700;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #FFD700;
+  animation: shootingStar 6s linear infinite;
+  animation-delay: 10s;
+  z-index: -1;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(90deg, #FFD700, transparent);
+    transform: translate(-100%, -50%);
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    left: -100px;
+    top: 20%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    top: 80%;
+    opacity: 0;
+  }
+}
+
+// Responsive adjustments for performance
+@media screen and (max-width: 768px) {
+  .animated-stars-canvas {
+    // Reduce performance impact on mobile if needed
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shooting-star {
+    animation-duration: 4s;
+    animation-delay: 15s;
+  }
+}
